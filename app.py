@@ -118,4 +118,4 @@ def handle_message(data):
 if __name__ == '__main__':
     # Using port 5000 for local testing. Render will automatically assign its own port later!
     port = int(os.environ.get("PORT", 5000))
-    socketio.run(app, host='0.0.0.0', port=port, debug=True)
+    socketio.run(app, host='0.0.0.0', port=port, allow_unsafe_werkzeug=True)
