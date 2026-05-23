@@ -14,8 +14,8 @@ def get_db_connection():
     return mysql.connector.connect(
         host="gateway01.ap-southeast-1.prod.aws.tidbcloud.com",
         port=4000,
-        user="4GFXwmQJuEYct8p.root",
-        password="2izbrNxGLKXzO43E", # <-- UPDATE THIS!
+        user="",
+        password="", # <-- UPDATE THIS!
         database="test", 
         ssl_ca="isrgrootx1.pem",  # <-- UPDATE THIS! (e.g., "isrgrootx1.pem")
         ssl_verify_cert=True,
